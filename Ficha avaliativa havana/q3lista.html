@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+    var nome = prompt('Qual o nome dele?'); 
+	var nota1 = 0; 
+	var nota2 = 0; 
+	var nota3 = 0;
+	for(var cont = 0; cont != 2; cont++ ){
+	
+	nota1 = parseFloat(prompt('Primeira nota dele'))
+	nota2 = parseFloat(prompt('Segunda nota dele'))
+	nota3 = parseFloat(prompt('Terceira nota dele'))
+	media = ((nota1*4) + (nota2*3) + (nota3*3))/10
+	document.write('Nome: '+ nome + '<br>' + 'Primeira nota: ' + nota1 +'<br>' + 'Segunda nota: ' + nota2 + '<br>' + 
+	'Terceira Nota: ' + nota3 + '<br>' + 'Média Ponderada: ' + media + '<br>')
+
+	if(media < 5){
+	document.write('Reprovado')
+	}else{document.write('Aprovado')}
+	document.write('<br>' + "<br>")
+	}
+    </script>    
+</body>
